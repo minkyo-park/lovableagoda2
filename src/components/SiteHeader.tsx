@@ -5,7 +5,6 @@ const AFFILIATE_LINK = "http://app.ac/7qp46L283";
 
 const navItems = [
   { path: "/", label: "홈" },
-  { path: "/discount-codes", label: "할인코드 & 프로모션" },
   { path: "/how-to-use", label: "사용방법 & 트러블슈팅" },
   { path: "/tips-guide", label: "꿀팁 & 비교 가이드" },
 ];
@@ -22,7 +21,6 @@ const SiteHeader = () => {
           <span>아고다 할인코드</span>
         </Link>
 
-        {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <Link
@@ -47,7 +45,6 @@ const SiteHeader = () => {
           </a>
         </div>
 
-        {/* Mobile hamburger */}
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setIsOpen(!isOpen)}
@@ -64,7 +61,6 @@ const SiteHeader = () => {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden border-t border-border bg-card px-4 pb-4">
           {navItems.map((item) => (
