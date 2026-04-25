@@ -16,9 +16,9 @@ const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
       <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between" aria-label="주요 내비게이션">
-        <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary" aria-label="아고다 할인코드 홈">
+        <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary" aria-label="아고다 카드할인 홈">
           <span className="text-secondary text-2xl">✈</span>
-          <span>아고다 할인코드</span>
+          <span>아고다 카드할인</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">

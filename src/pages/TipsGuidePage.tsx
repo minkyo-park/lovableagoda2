@@ -15,16 +15,16 @@ const schema = {
   "headline": "아고다 꿀팁 & 비교 가이드 2026 — 할인 극대화 전략",
   "description": "중복 할인 조합법, VIP 등급 가이드, 결제 통화 설정, OTA 비교, 추천 카드 TOP 5, 월별 프로모션 캘린더 총정리",
   "url": "https://agd.dongbaektour.co.kr/tips-guide",
-  "publisher": { "@type": "Organization", "name": "아고다 할인코드" },
-  "datePublished": "2026-04-07",
-  "dateModified": "2026-04-07"
+  "publisher": { "@type": "Organization", "name": "아고다 카드할인" },
+  "datePublished": "2026-05-07",
+  "dateModified": "2026-05-07"
 };
 
 const TipsGuidePage = () => {
   return (
     <>
       <SeoHead
-        title="꿀팁 & 비교 가이드 - 아고다 할인코드"
+        title="꿀팁 & 비교 가이드 - 아고다 카드할인"
         description="아고다 할인 극대화 전략, 중복 할인 조합법, VIP 등급 가이드, 결제 통화 설정, 아고다 vs 부킹닷컴 비교, 추천 카드 TOP 5 총정리."
         path="/tips-guide"
         schema={schema}

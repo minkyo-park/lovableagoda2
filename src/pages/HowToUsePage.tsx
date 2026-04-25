@@ -12,8 +12,8 @@ const AFFILIATE_LINK = "http://app.ac/7qp46L283";
 const schema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "아고다 할인코드 사용방법",
-  "description": "아고다 할인코드 사용법, 카드사 프로모션 적용법, 트러블슈팅 가이드",
+  "name": "아고다 카드할인 사용방법",
+  "description": "아고다 카드할인 사용법, 카드사 프로모션 적용법, 트러블슈팅 가이드",
   "url": "https://agd.dongbaektour.co.kr/how-to-use",
   "step": [
     { "@type": "HowToStep", "name": "할인코드 확인 및 복사", "text": "사용할 할인코드를 확인하고 복사합니다" },
@@ -37,8 +37,8 @@ const HowToUsePage = () => {
   return (
     <>
       <SeoHead
-        title="사용방법 & 트러블슈팅 가이드 - 아고다 할인코드"
-        description="아고다 할인코드 사용법 단계별 가이드, 카드사 프로모션 적용법, 할인 안 될 때 9가지 해결법, 예약 변경/취소 안내 총정리."
+        title="사용방법 & 트러블슈팅 가이드 - 아고다 카드할인"
+        description="아고다 카드할인 사용법 단계별 가이드, 카드사 프로모션 적용법, 할인 안 될 때 9가지 해결법, 예약 변경/취소 안내 총정리."
         path="/how-to-use"
         schema={schema}
       />

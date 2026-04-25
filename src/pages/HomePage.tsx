@@ -15,12 +15,12 @@ const AFFILIATE_LINK = "http://app.ac/7qp46L283";
 const homeSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "아고다 할인코드",
+  "name": "아고다 카드할인",
   "url": "https://agd.dongbaektour.co.kr",
-  "description": "아고다 할인코드, 카드사 프로모션, 사용법, 꿀팁 총정리",
+  "description": "아고다 카드할인, 카드사 프로모션, 사용법, 꿀팁 총정리",
   "publisher": {
     "@type": "Organization",
-    "name": "아고다 할인코드",
+    "name": "아고다 카드할인",
     "url": "https://agd.dongbaektour.co.kr"
   }
 };
@@ -29,8 +29,8 @@ const HomePage = () => {
   return (
     <>
       <SeoHead
-        title="아고다 할인코드"
-        description="2026년 4월 최신 아고다 할인코드, 카드사 프로모션, 카카오페이 할인 총정리. 최대 15% 할인 쿠폰 사용법부터 꿀팁까지 한눈에 확인하세요."
+        title="아고다 카드할인"
+        description="5월 아고다 카드할인 총정리! 카카오페이, 카드사 할인부터 아고다 할인링크, 카카오페이 등 다양한 혜택들이 업데이트 되었습니다. 일본, 국내에서 사용 가능한 할인코드도 한 눈에. 최대 혜택 받고 예약하세요!"
         path="/"
         schema={homeSchema}
       />
@@ -132,7 +132,7 @@ const HomePage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-muted-foreground mb-4">
               <p><strong>특징:</strong> 기존 할인에 중복 적용 가능</p>
               <p><strong>대상:</strong> 신규/기존 회원 모두</p>
-              <p><strong>유효기간:</strong> 4월 30일까지</p>
+              <p><strong>유효기간:</strong> 5월 31일까지</p>
               <p><strong>플랫폼:</strong> PC/모바일 웹 전용</p>
             </div>
             <div className="bg-success/10 border border-success/30 rounded-lg p-3 text-xs text-muted-foreground mb-4">
@@ -148,7 +148,7 @@ const HomePage = () => {
               <span className="info-badge bg-primary text-primary-foreground">5%</span>
             </div>
             <div className="text-sm text-muted-foreground mb-4">
-              <p>한국 내 모든 숙소 대상 · 4월 30일까지 · 웹 전용</p>
+              <p>한국 내 모든 숙소 대상 · 5월 31일까지 · 웹 전용</p>
             </div>
             <CtaButton text="국내숙소 5% 할인 →" className="w-full sm:w-auto" />
           </article>
@@ -417,7 +417,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { name: "더블데이 세일", desc: "프로모션 대상 숙소 15% 추가 할인", period: "~4월 11일", badge: "HOT" },
-              { name: "타이페이 나이스 스테이", desc: "대만 타이페이 숙소 최대 23% 할인", period: "~4월 30일", badge: "NEW" },
+              { name: "타이페이 나이스 스테이", desc: "대만 타이페이 숙소 최대 23% 할인", period: "~5월 31일", badge: "NEW" },
               { name: "엘리트 이스케이프", desc: "두바이, 방콕, 푸켓 럭셔리 숙소 최대 40% 할인", period: "~6월 30일", badge: "럭셔리" },
               { name: "국내숙소 프로모션", desc: "국내 호텔 최대 25% 할인", period: "상시", badge: "상시" },
             ].map((promo, i) => (

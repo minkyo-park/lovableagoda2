@@ -16,8 +16,8 @@ const schema = {
   "description": "아고다 할인코드 종류별 상세 정보, 카드사 프로모션, 간편결제 할인, 시즌별 이벤트 총정리",
   "url": "https://agd.dongbaektour.co.kr/discount-codes",
   "publisher": { "@type": "Organization", "name": "아고다 할인코드" },
-  "datePublished": "2026-04-07",
-  "dateModified": "2026-04-07"
+  "datePublished": "2026-05-07",
+  "dateModified": "2026-05-07"
 };
 
 const DiscountCodesPage = () => {
@@ -121,7 +121,7 @@ const DiscountCodesPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-muted-foreground mb-4">
               <p><strong>특징:</strong> 기존 할인에 중복 적용 가능</p>
               <p><strong>대상:</strong> 신규/기존 회원 모두</p>
-              <p><strong>유효기간:</strong> 4월 30일까지</p>
+              <p><strong>유효기간:</strong> 5월 31일까지</p>
               <p><strong>플랫폼:</strong> PC/모바일 웹 전용</p>
             </div>
             <div className="bg-success/10 border border-success/30 rounded-lg p-3 text-xs text-muted-foreground mb-4">
@@ -138,7 +138,7 @@ const DiscountCodesPage = () => {
               <span className="info-badge bg-primary text-primary-foreground">5%</span>
             </div>
             <div className="text-sm text-muted-foreground mb-4">
-              <p>한국 내 모든 숙소 대상 · 4월 30일까지 · 웹 전용</p>
+              <p>한국 내 모든 숙소 대상 · 5월 31일까지 · 웹 전용</p>
             </div>
             <CtaButton text="국내숙소 5% 할인 →" className="w-full sm:w-auto" />
           </article>
