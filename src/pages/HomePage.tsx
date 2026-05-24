@@ -9,6 +9,11 @@ import destinationBali from "@/assets/destination-bali.jpg";
 import destinationTokyo from "@/assets/destination-tokyo.jpg";
 import savingsConcept from "@/assets/savings-concept.jpg";
 import calendarPromo from "@/assets/calendar-promo.jpg";
+import coupon1 from "@/assets/coupon-1.webp";
+import coupon2 from "@/assets/coupon-2.webp";
+import coupon3 from "@/assets/coupon-3.webp";
+import coupon4 from "@/assets/coupon-4.webp";
+import coupon5 from "@/assets/coupon-5.webp";
 
 const AFFILIATE_LINK = "http://app.ac/7qp46L283";
 
@@ -66,6 +71,7 @@ const HomePage = () => {
         <div className="space-y-6">
           <article className="discount-card">
             <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+              <img src={coupon1} alt="아고다 전 세계 기본 5% 할인코드 쿠폰 이미지" loading="lazy" width={1254} height={1254} className="w-full sm:w-44 md:w-52 aspect-square object-cover rounded-xl shrink-0" />
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-xl font-bold">전 세계 기본 할인코드</h3>
@@ -89,6 +95,9 @@ const HomePage = () => {
           </article>
 
           <article className="discount-card">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <img src={coupon2} alt="아고다 신규 회원 7% 할인코드 쿠폰 이미지" loading="lazy" width={1254} height={1254} className="w-full sm:w-44 md:w-52 aspect-square object-cover rounded-xl shrink-0" />
+              <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-xl font-bold">신규 회원 할인코드</h3>
               <span className="info-badge bg-success text-success-foreground">7%</span>
@@ -104,9 +113,14 @@ const HomePage = () => {
               아고다 정책 위반 가능성이 있습니다.
             </div>
             <CtaButton text="신규 회원 7% 할인 받기 →" className="w-full sm:w-auto" />
+              </div>
+            </div>
           </article>
 
           <article className="discount-card">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <img src={coupon3} alt="아고다 인기 여행지 8% 할인코드 쿠폰 이미지" loading="lazy" width={1254} height={1254} className="w-full sm:w-44 md:w-52 aspect-square object-cover rounded-xl shrink-0" />
+              <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-xl font-bold">인기 여행지 할인코드</h3>
               <span className="info-badge bg-secondary text-secondary-foreground">8%</span>
@@ -117,14 +131,15 @@ const HomePage = () => {
               <p><strong>최소 결제:</strong> $100 이상</p>
               <p><strong>플랫폼:</strong> PC 웹, 모바일 웹 (앱 불가)</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <img src={destinationBangkok} alt="태국 방콕 할인" width={400} height={300} loading="lazy" className="rounded-lg w-full h-32 object-cover" />
-              <img src={destinationBali} alt="발리 인도네시아 할인" width={400} height={300} loading="lazy" className="rounded-lg w-full h-32 object-cover" />
-            </div>
             <CtaButton text="인기 여행지 8% 할인 적용 →" className="w-full sm:w-auto" />
+              </div>
+            </div>
           </article>
 
           <article className="discount-card">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <img src={coupon4} alt="아고다 인플루언서 최대 12% 할인코드 쿠폰 이미지" loading="lazy" width={1254} height={1254} className="w-full sm:w-44 md:w-52 aspect-square object-cover rounded-xl shrink-0" />
+              <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-xl font-bold">인플루언서 할인코드</h3>
               <span className="info-badge bg-destructive text-destructive-foreground">최대 12%</span>
@@ -140,9 +155,14 @@ const HomePage = () => {
               카드사 프로모션 + 인플루언서 코드를 동시에 활용하면 최대 할인을 받을 수 있습니다.
             </div>
             <CtaButton text="인플루언서 12% 할인 적용 →" className="w-full sm:w-auto" />
+              </div>
+            </div>
           </article>
 
           <article className="discount-card">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <img src={coupon5} alt="아고다 국내숙소 전용 5% 할인코드 쿠폰 이미지" loading="lazy" width={1254} height={1254} className="w-full sm:w-44 md:w-52 aspect-square object-cover rounded-xl shrink-0" />
+              <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-xl font-bold">국내숙소 전용 할인코드</h3>
               <span className="info-badge bg-primary text-primary-foreground">5%</span>
@@ -151,6 +171,8 @@ const HomePage = () => {
               <p>한국 내 모든 숙소 대상 · 5월 31일까지 · 웹 전용</p>
             </div>
             <CtaButton text="국내숙소 5% 할인 →" className="w-full sm:w-auto" />
+              </div>
+            </div>
           </article>
 
           <article className="discount-card">
