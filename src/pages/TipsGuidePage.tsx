@@ -16,8 +16,8 @@ const schema = {
   "description": "중복 할인 조합법, VIP 등급 가이드, 결제 통화 설정, OTA 비교, 추천 카드 TOP 5, 월별 프로모션 캘린더 총정리",
   "url": "https://agd.dongbaektour.co.kr/tips-guide",
   "publisher": { "@type": "Organization", "name": "아고다 카드할인" },
-  "datePublished": "2026-05-07",
-  "dateModified": "2026-05-07"
+  "datePublished": "2026-06-07",
+  "dateModified": "2026-06-07"
 };
 
 const TipsGuidePage = () => {

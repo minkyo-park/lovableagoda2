@@ -16,8 +16,8 @@ const schema = {
   "description": "아고다 할인코드 종류별 상세 정보, 카드사 프로모션, 간편결제 할인, 시즌별 이벤트 총정리",
   "url": "https://agd.dongbaektour.co.kr/discount-codes",
   "publisher": { "@type": "Organization", "name": "아고다 할인코드" },
-  "datePublished": "2026-05-07",
-  "dateModified": "2026-05-07"
+  "datePublished": "2026-06-07",
+  "dateModified": "2026-06-07"
 };
 
 const DiscountCodesPage = () => {
@@ -58,6 +58,7 @@ const DiscountCodesPage = () => {
                   <span className="info-badge bg-primary text-primary-foreground">5%</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-muted-foreground mb-4">
+                  <p><strong>할인코드:</strong> COUDAL</p>
                   <p><strong>대상:</strong> 전 세계 모든 지역 숙소</p>
                   <p><strong>적용 조건:</strong> 기존/신규 회원 모두 가능</p>
                   <p><strong>플랫폼:</strong> PC 웹, 모바일 웹 (앱 불가)</p>
@@ -119,9 +120,10 @@ const DiscountCodesPage = () => {
               <span className="info-badge bg-destructive text-destructive-foreground">최대 12%</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-muted-foreground mb-4">
+              <p><strong>할인코드:</strong> LP12AGD2</p>
               <p><strong>특징:</strong> 기존 할인에 중복 적용 가능</p>
               <p><strong>대상:</strong> 신규/기존 회원 모두</p>
-              <p><strong>유효기간:</strong> 5월 31일까지</p>
+              <p><strong>유효기간:</strong> 6월 30일까지</p>
               <p><strong>플랫폼:</strong> PC/모바일 웹 전용</p>
             </div>
             <div className="bg-success/10 border border-success/30 rounded-lg p-3 text-xs text-muted-foreground mb-4">
@@ -138,9 +140,25 @@ const DiscountCodesPage = () => {
               <span className="info-badge bg-primary text-primary-foreground">5%</span>
             </div>
             <div className="text-sm text-muted-foreground mb-4">
-              <p>한국 내 모든 숙소 대상 · 5월 31일까지 · 웹 전용</p>
+              <p>한국 내 모든 숙소 대상 · 6월 30일까지 · 웹 전용</p>
             </div>
             <CtaButton text="국내숙소 5% 할인 →" className="w-full sm:w-auto" />
+          </article>
+
+          <article className="discount-card">
+            <div className="flex items-center gap-2 mb-2">
+              <h3 className="text-xl font-bold">국내숙소 10% 할인코드</h3>
+              <span className="info-badge bg-secondary text-secondary-foreground">10%</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-muted-foreground mb-4">
+              <p><strong>할인코드:</strong> LP10AGD2</p>
+              <p><strong>대상:</strong> 한국 내 모든 숙소</p>
+              <p><strong>최대 할인:</strong> $25</p>
+              <p><strong>예약 기간:</strong> 2026.06.01~06.30</p>
+              <p><strong>숙박 기간:</strong> ~2027.03.31</p>
+              <p><strong>플랫폼:</strong> PC/모바일 웹 전용</p>
+            </div>
+            <CtaButton text="국내숙소 10% 할인 적용 →" className="w-full sm:w-auto" />
           </article>
 
           <article className="discount-card">
@@ -258,7 +276,7 @@ const DiscountCodesPage = () => {
 
         <div className="space-y-4">
           {[
-            { card: "삼성카드", rate: "전 지역 7% / 인니·말레이·이탈리아 10%", period: "~2026.4.30", method: "삼성카드 전용 페이지에서 접속 후 결제", notes: "LINK 혜택 또는 전용 예약 페이지 필수. 삼성페이 이용 시 할인 제외될 수 있음" },
+            { card: "삼성카드", rate: "전 지역 7% / 인니·말레이·이탈리아 10%", period: "~2026.6.30", method: "삼성카드 전용 페이지에서 접속 후 결제", notes: "LINK 혜택 또는 전용 예약 페이지 필수. 삼성페이 이용 시 할인 제외될 수 있음" },
             { card: "신한카드", rate: "전 지역 7% / 인니·말레이·이탈리아 10%", period: "~2026.6.30", method: "신한카드 전용 페이지 접속 → 자동 적용", notes: "선착순, 선결제 상품" },
             { card: "우리카드", rate: "전 지역 7% / 특정 지역 10%", period: "~2026.6.30", method: "전용 페이지 접속 → 핀번호 입력 시 자동", notes: "'선결제', '지금 결제하기' 객실 유형만" },
             { card: "NH농협카드", rate: "전 지역 7% / 말레이·스페인·이탈리아 10%", period: "~2026.6.30", method: "NH농협 전용 페이지 접속 → 선결제", notes: "신용카드, 체크카드 모두 가능. 최대 20%까지" },
@@ -303,10 +321,17 @@ const DiscountCodesPage = () => {
             </article>
             <article className="discount-card">
               <h3 className="font-bold text-lg mb-2">네이버페이</h3>
-              <span className="info-badge bg-success text-success-foreground mb-3">최대 4% 적립</span>
-              <p className="text-sm text-muted-foreground mb-1">구매금액의 최대 4% 적립</p>
-              <p className="text-sm text-muted-foreground mb-4">할인코드와 별도 적립 가능</p>
-              <CtaButton text="네이버페이로 예약 →" className="w-full text-sm py-2" />
+              <span className="info-badge bg-warning text-warning-foreground mb-3">11% 할인</span>
+              <p className="text-sm text-muted-foreground mb-1">국내·해외 11% 할인 · 최대 100 USD</p>
+              <p className="text-sm text-muted-foreground mb-4">예약 6.1~6.30 / 투숙 ~8.31 · 전용 페이지 결제</p>
+              <CtaButton text="네이버페이 할인 →" className="w-full text-sm py-2" href="https://www.agoda.com/ko-kr/naverpaypromo?cid=1963008&tag=A100692912" />
+            </article>
+            <article className="discount-card">
+              <h3 className="font-bold text-lg mb-2">토스페이</h3>
+              <span className="info-badge bg-warning text-warning-foreground mb-3">11% 할인</span>
+              <p className="text-sm text-muted-foreground mb-1">국내·해외 11% 할인 · 최대 100 USD</p>
+              <p className="text-sm text-muted-foreground mb-4">예약 6.1~6.30 / 투숙 ~8.31 · 전용 페이지 결제</p>
+              <CtaButton text="토스페이 할인 →" className="w-full text-sm py-2" href="https://www.agoda.com/ko-kr/tosspaypromo?cid=1963016&tag=A100692912" />
             </article>
             <article className="discount-card">
               <h3 className="font-bold text-lg mb-2">PAYCO / 페이팔</h3>

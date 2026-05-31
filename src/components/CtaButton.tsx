@@ -5,9 +5,10 @@ interface CtaButtonProps {
   variant?: "primary" | "outline" | "copy";
   code?: string;
   className?: string;
+  href?: string;
 }
 
-const CtaButton = ({ text = "할인 적용하기", variant = "primary", code, className = "" }: CtaButtonProps) => {
+const CtaButton = ({ text = "할인 적용하기", variant = "primary", code, className = "", href }: CtaButtonProps) => {
   const handleCopy = () => {
     if (code) {
       navigator.clipboard.writeText(code);
@@ -54,7 +55,7 @@ const CtaButton = ({ text = "할인 적용하기", variant = "primary", code, cl
 
   return (
     <a
-      href={AFFILIATE_LINK}
+      href={href || AFFILIATE_LINK}
       target="_blank"
       rel="noopener noreferrer nofollow"
       className={`cta-button text-center inline-block ${className}`}
